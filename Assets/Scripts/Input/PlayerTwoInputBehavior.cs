@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInputBehavior : MonoBehaviour
+public class PlayerTwoInputBehavior : MonoBehaviour
 {
     private PlayerMovementBehavior _playerMovement;
 
@@ -15,11 +15,6 @@ public class PlayerInputBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        _playerMovement.MoveDirection = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized;
-
-        if (Input.GetKeyDown("escape"))
-        {
-            Application.Quit();
-        }
+        _playerMovement.MoveDirection = new Vector3(Input.GetAxisRaw("ArrowHorizontal"), 0, Input.GetAxisRaw("ArrowVertical")).normalized;
     }
 }
