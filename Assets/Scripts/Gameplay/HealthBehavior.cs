@@ -21,9 +21,11 @@ public class HealthBehavior : MonoBehaviour
         get { return _isAlive; }
     }
 
-    public virtual float TakeDamage(float damageAmount)
+    public float TakeDamage(float damageAmount)
     {
         _health -= damageAmount;
+
+        if (_health <= 0) Destroy(gameObject);
 
         return damageAmount;
     }
