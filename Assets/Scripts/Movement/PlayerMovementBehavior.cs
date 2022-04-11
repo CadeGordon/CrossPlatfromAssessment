@@ -7,6 +7,7 @@ public class PlayerMovementBehavior : MonoBehaviour
     [SerializeField]
     private float _speed;
     private Rigidbody _rigidbody;
+    [SerializeField]
     private Vector3 _moveDirection;
     private Vector2 _rotationDirection;
 
@@ -21,8 +22,9 @@ public class PlayerMovementBehavior : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
-        _rigidbody.MovePosition(transform.position + MoveDirection * _speed * Time.fixedDeltaTime);
+        Debug.Log(MoveDirection * _speed);
+        _rigidbody.velocity = MoveDirection * _speed;
     }
 }
