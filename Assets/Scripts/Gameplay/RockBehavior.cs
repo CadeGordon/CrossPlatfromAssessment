@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RockBehavior : MonoBehaviour
 {
-   private string _ownerTag;
+   private string _playerTag;
     [SerializeField]
     private float _damage;
     [SerializeField]
@@ -13,11 +13,19 @@ public class RockBehavior : MonoBehaviour
     private bool _destroyOnHit;
     private float _currentLifeTime;
     private Rigidbody _rigidBody;
+    [SerializeField]
+    private Transform _target;
+
+    public Transform Target
+    {
+        get { return _target; }
+        set { _target = value; }
+    }
 
     public string OwnerTag
     {
-        get { return _ownerTag; }
-        set { _ownerTag = value; }
+        get { return _playerTag; }
+        set { _playerTag = value; }
     }
 
     public Rigidbody Rigidbody
@@ -32,7 +40,7 @@ public class RockBehavior : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag(OwnerTag))
+        if (other.transform == Target)
             return;
 
         HealthBehavior otherHeatlh = other.GetComponent<HealthBehavior>();

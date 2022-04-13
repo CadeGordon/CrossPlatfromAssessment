@@ -127,9 +127,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _velocity: {x: 0, y: 0, z: 0}
-  _target: {fileID: 0}
+  _target: {fileID: 8964369853369600119, guid: 20ef334de6dfd3d43b1148dfe5cbe73f, type: 3}
   _speed: 1
-  _damage: 0
+  _damage: 2
 --- !u!114 &-3236581367724115305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7ebc4c7757d7dd4ab7a0bb61b0739f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _damage: 6
+  _damage: 1
   _lifeTime: 12
   _destroyOnHit: 1
+  _target: {fileID: 8964369853369600119, guid: 20ef334de6dfd3d43b1148dfe5cbe73f, type: 3}

@@ -10,6 +10,7 @@ public class RockMovementBehavior : MovementBehavior
     private float _speed;
     [SerializeField]
     private float _damage;
+    
 
     public float Speed
     {
@@ -31,5 +32,18 @@ public class RockMovementBehavior : MovementBehavior
         base.Update();
     }
 
-    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform == _target)
+        {
+            HealthBehavior playerHealth = other.GetComponent<HealthBehavior>();
+            if (playerHealth)
+                playerHealth.TakeDamage(_damage);
+
+            Destroy(gameObject);
+        }
+    }
+
+   
+
 }

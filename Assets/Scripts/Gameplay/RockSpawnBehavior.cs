@@ -10,14 +10,12 @@ public class RockSpawnBehavior : MonoBehaviour
     [SerializeField]
     private Transform _rockTarget;
 
-    [SerializeField]
-    private float _timeAlive;
+   
 
     [SerializeField]
     private float _spawnTimer = 5.0f;
     private float _timer = 0.0f;
-    [SerializeField]
-    private float _enemySpawnCount;
+    
 
     private void Update()
     {

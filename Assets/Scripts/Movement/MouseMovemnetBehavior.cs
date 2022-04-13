@@ -11,7 +11,6 @@ public class MouseMovemnetBehavior : MonoBehaviour
     void Awake()
     {
         _mouseMovement = GetComponent<PlayerMovementBehavior>();
-
     }
 
     void Update()

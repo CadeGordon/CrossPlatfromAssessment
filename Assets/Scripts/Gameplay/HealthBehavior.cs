@@ -25,7 +25,6 @@ public class HealthBehavior : MonoBehaviour
     {
         _health -= damageAmount;
 
-        if (_health <= 0) Destroy(gameObject);
 
         return damageAmount;
     }
