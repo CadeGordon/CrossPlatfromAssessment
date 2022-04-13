@@ -51,7 +51,9 @@ public class RockBehavior : MonoBehaviour
         otherHeatlh.TakeDamage(_damage);
 
         if (_destroyOnHit)
+        {
             Destroy(gameObject);
+        }
     }
 
     private void Update()

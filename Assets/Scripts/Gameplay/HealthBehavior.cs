@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthBehavior : MonoBehaviour
 {
@@ -44,6 +45,9 @@ public class HealthBehavior : MonoBehaviour
         _isAlive = _health > 0;
 
         if (!IsAlive && _destroyOnDeath)
-            Destroy(gameObject);
+        {
+            SceneManager.LoadScene(sceneName: "Menu");
+        }
+           
     }
 }

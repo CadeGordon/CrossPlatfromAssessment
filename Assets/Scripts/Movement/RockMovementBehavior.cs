@@ -39,7 +39,7 @@ public class RockMovementBehavior : MovementBehavior
             HealthBehavior playerHealth = other.GetComponent<HealthBehavior>();
             if (playerHealth)
                 playerHealth.TakeDamage(_damage);
-
+            
             Destroy(gameObject);
         }
     }
