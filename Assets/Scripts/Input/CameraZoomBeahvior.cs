@@ -33,5 +33,6 @@ public class CameraZoomBeahvior : MonoBehaviour
         Vector3 scaledPosition = Vector3.Scale(_startPos * (float)ratio, _zoomScale);
 
         transform.position = scaledPosition;
+
     }
 }
