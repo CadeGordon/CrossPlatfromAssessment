@@ -1287,7 +1287,7 @@ Transform:
   m_LocalPosition: {x: 0.11, y: 3.12, z: -7.39}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1849736777967335}
+  m_Father: {fileID: 1849736777967334}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -8.01, y: -1.437, z: -0.271}
 --- !u!114 &963194229
@@ -1303,7 +1303,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _referenceAspectRatio: {x: 9, y: 16}
-  _zoomScale: {x: 1, y: 1, z: 1}
 --- !u!1001 &967040000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2510,7 +2509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a7db40f7a2944548877db540caeb6c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1849736777967335 stripped
+--- !u!4 &1849736777967334 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8964369853369600119, guid: 20ef334de6dfd3d43b1148dfe5cbe73f, type: 3}
   m_PrefabInstance: {fileID: 8964662700660726159}

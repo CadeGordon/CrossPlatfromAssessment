@@ -9,7 +9,6 @@ public class RockBehavior : MonoBehaviour
     private float _damage;
     [SerializeField]
     private float _lifeTime;
-    [SerializeField]
     private bool _destroyOnHit;
     private float _currentLifeTime;
     private Rigidbody _rigidBody;

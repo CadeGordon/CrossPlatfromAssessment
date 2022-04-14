@@ -9,7 +9,6 @@ public class PlayerMovementBehavior : MonoBehaviour
     private Rigidbody _rigidbody;
     [SerializeField]
     private Vector3 _moveDirection;
-    private Vector2 _rotationDirection;
 
     public Vector3 MoveDirection
     {
